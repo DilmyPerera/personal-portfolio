@@ -99,26 +99,26 @@ export const ContactSection = () => {
           >
             <div className="card-elevated rounded-xl p-6">
               <h3 className="text-xl font-semibold text-foreground mb-6">Send a Message</h3>
-              <form className="space-y-4">
+              <form action="https://formspree.io/f/xeelkjen" method="POST" className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="text-sm font-medium text-foreground mb-2 block">
                       Name
                     </label>
-                    <Input id="name" placeholder="Your name" />
+                    <Input id="name" name="name" placeholder="Your name" required />
                   </div>
                   <div>
                     <label htmlFor="email" className="text-sm font-medium text-foreground mb-2 block">
                       Email
                     </label>
-                    <Input id="email" type="email" placeholder="your@email.com" />
+                    <Input id="email" name="email" type="email" placeholder="your@email.com" required />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="subject" className="text-sm font-medium text-foreground mb-2 block">
                     Subject
                   </label>
-                  <Input id="subject" placeholder="How can I help you?" />
+                  <Input id="subject" name="subject" placeholder="How can I help you?" />
                 </div>
                 <div>
                   <label htmlFor="message" className="text-sm font-medium text-foreground mb-2 block">
@@ -126,11 +126,13 @@ export const ContactSection = () => {
                   </label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder="Your message..."
                     rows={4}
+                    required
                   />
                 </div>
-                <Button className="w-full gap-2">
+                <Button type="submit" className="w-full gap-2">
                   <Send size={16} />
                   Send Message
                 </Button>
