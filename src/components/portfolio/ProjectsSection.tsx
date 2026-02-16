@@ -4,62 +4,7 @@ import { ExternalLink, Github, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
-  // {
-  //   title: "Sentiment Analysis for Product Reviews",
-  //   problem: "E-commerce platforms struggle to extract actionable insights from large volumes of unstructured customer reviews.",
-  //   objective: "Develop an NLP pipeline to classify sentiment and identify key themes in product feedback.",
-  //   technologies: ["Python", "BERT", "Scikit-learn", "Pandas", "Streamlit"],
-  //   methodology: "Implemented fine-tuned BERT model with preprocessing pipeline including tokenization, lemmatization, and feature extraction.",
-  //   outcomes: [
-  //     "Achieved 92% accuracy on sentiment classification",
-  //     "Reduced manual review analysis time by 80%",
-  //     "Identified 15+ recurring product improvement themes",
-  //   ],
-  //   role: "Led the entire project from data collection to deployment, including model training and dashboard development.",
-  //   featured: true,
-  // },
-  // {
-  //   title: "Explainable AI for Loan Approval Predictions",
-  //   problem: "Financial institutions need transparent ML models to explain loan approval decisions for regulatory compliance.",
-  //   objective: "Build an interpretable classification system with LIME and SHAP explanations.",
-  //   technologies: ["Python", "XGBoost", "LIME", "SHAP", "Flask"],
-  //   methodology: "Trained ensemble models with hyperparameter tuning, integrated XAI techniques for feature importance visualization.",
-  //   outcomes: [
-  //     "Achieved 89% AUC-ROC score on test dataset",
-  //     "Generated human-readable explanations for each prediction",
-  //     "Created interactive dashboard for loan officers",
-  //   ],
-  //   role: "Developed the complete ML pipeline and implemented XAI components for model interpretability.",
-  //   featured: true,
-  // },
-  // {
-  //   title: "Research Proposal Classification System",
-  //   problem: "Academic institutions face challenges in categorizing large volumes of research proposals efficiently.",
-  //   objective: "Automate classification of research proposals into relevant departments and funding categories.",
-  //   technologies: ["Python", "RoBERTa", "spaCy", "PostgreSQL", "FastAPI"],
-  //   methodology: "Applied transfer learning with domain-specific fine-tuning on academic text corpus.",
-  //   outcomes: [
-  //     "95% classification accuracy across 12 research categories",
-  //     "Reduced proposal routing time from days to minutes",
-  //     "Deployed as REST API for institutional integration",
-  //   ],
-  //   role: "Designed system architecture, trained NLP models, and developed the API backend.",
-  //   featured: false,
-  // },
-  // {
-  //   title: "Customer Churn Prediction Dashboard",
-  //   problem: "Telecom company losing customers without early warning signs to enable proactive retention.",
-  //   objective: "Build predictive model to identify at-risk customers with actionable insights.",
-  //   technologies: ["Python", "Logistic Regression", "Random Forest", "Power BI", "SQL"],
-  //   methodology: "Feature engineering on customer behavior data, ensemble modeling with cross-validation.",
-  //   outcomes: [
-  //     "Identified top 10 churn indicators with 85% precision",
-  //     "Enabled targeted retention campaigns saving estimated 15% revenue",
-  //     "Created executive dashboard for real-time monitoring",
-  //   ],
-  //   role: "Performed data analysis, built predictive models, and designed visualization dashboard.",
-  //   featured: false,
-  // },
+
   {
     "title": "Customer Churn Prediction & BI Dashboard",
     "problem": "High churn rate in telecom causing revenue leakage and high acquisition costs.",
@@ -357,14 +302,18 @@ export const ProjectsSection = () => {
                     ))}
                   </div>
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="gap-2">
-                      <Github size={16} />
-                      Code
-                    </Button>
-                    <Button variant="outline" size="sm" className="gap-2">
+                    {project.link && (
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm" className="gap-2">
+                          <Github size={16} />
+                          Code
+                        </Button>
+                      </a>
+                    )}
+                    {/* <Button variant="outline" size="sm" className="gap-2">
                       <ExternalLink size={16} />
                       Demo
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </div>
