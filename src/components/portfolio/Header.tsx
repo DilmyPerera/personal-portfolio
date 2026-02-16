@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "@/context/ThemeContext";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -15,6 +16,7 @@ const navItems = [
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   return (
     <motion.header
@@ -40,6 +42,13 @@ export const Header = () => {
                 {item.label}
               </a>
             ))}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg hover:bg-muted transition-colors"
+              aria-label="Toggle theme"
+            >
+              {isDark ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
             <Button size="sm" asChild>
               <a href="#contact">Get in Touch</a>
             </Button>
@@ -74,6 +83,15 @@ export const Header = () => {
                   {item.label}
                 </a>
               ))}
+              <button
+                onClick={() => {
+                  toggleTheme();
+                }}
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors py-2 w-fit"
+              >
+                {isDark ? <Sun size={16} /> : <Moon size={16} />}
+                {isDark ? "Light Mode" : "Dark Mode"}
+              </button>
               <Button size="sm" className="w-fit" asChild>
                 <a href="#contact" onClick={() => setIsMenuOpen(false)}>
                   Get in Touch
