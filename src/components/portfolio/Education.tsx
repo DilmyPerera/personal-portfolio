@@ -17,7 +17,7 @@ const experiences = [
         company: "Mahamaya Balika Vidyalaya, Kadawatha",
         period: "2020",
         responsibilities: [
-            "Completed Advanced Level examination in Physical Science stream and Ordinaly Level examination.",
+            "Completed Advanced Level examination in Physical Science stream and Ordinary Level examination.",
         ]
     },
 
