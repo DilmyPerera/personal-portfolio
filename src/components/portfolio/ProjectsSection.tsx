@@ -4,6 +4,33 @@ import { ExternalLink, Github, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
+  {
+    "title": "E-Commerce Sales Dashboard – End-to-End Analytics Project",
+    "problem": "Online retail businesses often struggle to understand revenue drivers, product performance, customer behavior, and geographic concentration from raw transactional data. The lack of clean, interactive insights makes it hard to identify quick wins and risks (e.g., market dependency, low-margin products, seasonality).",
+    "objective": "Build a complete analytics solution to transform raw e-commerce transaction data into an interactive Power BI dashboard that reveals key revenue trends, top products, customer metrics, and geographic opportunities — demonstrating full-stack data analysis and business insight delivery.",
+    "technologies": [
+      "Python",
+      "Matplotlib",
+      "Numpy",
+      "Seaborn",
+      "SQLite ",
+      "SQL ",
+      "Power BI Desktop ",
+
+    ],
+    "methodology": "Followed a structured end-to-end pipeline:\n1. Acquired Online Retail II dataset (~1M rows).\n2. Performed data cleaning & feature engineering in Python (Pandas).\n3. Designed and populated a star schema in SQLite (dim_date, dim_customer, dim_product, fact_sales).\n4. Wrote analytical SQL queries for top-N products, monthly trends, AOV by country, etc.\n5. Connected SQLite to Power BI, built relationships, created DAX measures (Total Revenue, AOV, dynamic Top N, repeat rate, etc.).\n6. Designed three focused pages: Overview (KPIs + trends), Product Performance (Top N + category share), Geography Insights (map + AOV by country).",
+    "outcomes": [
+      "Revealed ~86–90% revenue concentration in the UK → highlighted diversification need",
+      "Confirmed strong Pareto effect: ~20% of products drive ~80% of revenue",
+      "Identified clear Q4 seasonality (Nov–Dec spike)",
+      "Discovered higher Average Order Value (AOV) in several non-UK markets (expansion opportunity)",
+      "Delivered dynamic, interactive dashboard with slicers, what-if Top N parameter, and cross-filtering",
+      "Created reusable portfolio asset: full code, SQL queries, Power BI file, PDF export, GitHub repo"
+    ],
+    "role": "Solo end-to-end analyst: data cleaning, modeling, visualization, insight generation",
+    "link": "https://github.com/yourusername/ecommerce-sales-dashboard",
+    "featured": true
+  },
 
   {
     "title": "Customer Churn Prediction & BI Dashboard",
