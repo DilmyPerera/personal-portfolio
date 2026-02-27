@@ -10,15 +10,15 @@ const projects = [
     "objective": "Build a complete analytics solution to transform raw e-commerce transaction data into an interactive Power BI dashboard that reveals key revenue trends, top products, customer metrics, and geographic opportunities — demonstrating full-stack data analysis and business insight delivery.",
     "technologies": [
       "Python",
+      "Pandas",
       "Matplotlib",
-      "Numpy",
       "Seaborn",
       "SQLite ",
       "SQL ",
       "Power BI Desktop ",
 
     ],
-    "methodology": "Followed a structured end-to-end pipeline:\n1. Acquired Online Retail II dataset (~1M rows).\n2. Performed data cleaning & feature engineering in Python (Pandas).\n3. Designed and populated a star schema in SQLite (dim_date, dim_customer, dim_product, fact_sales).\n4. Wrote analytical SQL queries for top-N products, monthly trends, AOV by country, etc.\n5. Connected SQLite to Power BI, built relationships, created DAX measures (Total Revenue, AOV, dynamic Top N, repeat rate, etc.).\n6. Designed three focused pages: Overview (KPIs + trends), Product Performance (Top N + category share), Geography Insights (map + AOV by country).",
+    "methodology": "Full pipeline: cleaned data in Python (Pandas), built star schema in SQLite, wrote analytical SQL queries, modeled & visualized in Power BI with DAX and interactive features across 3 pages.",
     "outcomes": [
       "Revealed ~86–90% revenue concentration in the UK → highlighted diversification need",
       "Confirmed strong Pareto effect: ~20% of products drive ~80% of revenue",
