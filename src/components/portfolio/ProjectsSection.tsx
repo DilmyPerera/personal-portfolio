@@ -120,7 +120,7 @@ const projects = [
       "Comprehensive Postman API collection"
     ],
     "role": "Sole full-stack developer – backend architecture, implementation, security, cloud integration, API design & testing",
-    "link": "",
+    "link": "https://github.com/DilmyPerera/MahindaPlants.git",
     "featured": true
   },
   {
@@ -202,7 +202,7 @@ const projects = [
       "Easy Expo dev & testing workflow"
     ],
     "role": "Sole developer – full app development, UI/UX, logic implementation, data handling & documentation",
-    "link": "",
+    "link": "https://github.com/DilmyPerera/Student-Care-App.git",
     "featured": false
   },
 
