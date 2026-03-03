@@ -48,6 +48,33 @@ const projects = [
     "link": "https://github.com/DilmyPerera/Customer-Churn-Prediction-with-Machine-Learning-Power-BI.git",
     "featured": true
   },
+
+  {
+    "title": "EduTrack – Student Performance Dashboard",
+    "problem": "Teachers and educators often rely on spreadsheets to analyze student exam results, leading to time-consuming manual calculations, lack of interactive visualizations, and difficulty in quickly identifying performance trends or struggling students.",
+    "objective": "Build a full-stack web application that allows easy upload or manual entry of student exam data, provides real-time class-level analytics, visualizations, and individual student insights — demonstrating end-to-end development, data processing, and UI/UX skills for a portfolio.",
+    "technologies": [
+      "React", "Vite",
+      "Tailwind CSS",
+      "Chart.js",
+      "Flask",
+      "Python",
+      "SQLite",
+      "Pandas"
+    ],
+    "methodology": "Monorepo structure with separate frontend and backend folders → RESTful API endpoints for CRUD operations and analytics → Pandas for data aggregation, statistics, and grade categorization → React frontend with responsive UI, interactive charts, and real-time state updates after API calls → SQLite for persistent storage → CSV file upload support for bulk data ingestion (compatible with Kaggle datasets)",
+    "outcomes": [
+      "Fully functional full-stack application with upload, CRUD, and analytics features",
+      "Interactive dashboard showing class averages, pass rates, grade distribution (pie chart), subject comparisons (bar chart), and top/bottom students",
+      "Individual student detail view with personalized score visualization",
+      "Deployed live demo with real-time data interaction",
+      "Clean separation of concerns: frontend (static site), backend (API + data layer)",
+      "Strong portfolio piece showcasing React + Flask + data handling skills suitable for data analyst, data scientist, and full-stack roles"
+    ],
+    "role": "Full-Stack Developer & Data Analyst (solo project)",
+    "link": "https://github.com/DilmyPerera/student-progress-dashboard.git",
+    "featured": true,
+  },
   {
     "title": "Personal Budget Tracker",
     "problem": "Difficulty in tracking daily expenses, categorizing spending, and staying within monthly budget limits.",
