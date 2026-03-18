@@ -20,9 +20,9 @@ const projects = [
     ],
     "methodology": [
       "Component-based architecture",
-      "React Hooks for state and timer lifecycle management",
-      "Offline-first setup with service worker and cached assets",
-      "Iterative UX enhancement based on real usage feedback",
+      "React Hooks for state and timer lifecycle management, ",
+      "Offline-first setup with service worker and cached assets, ",
+      "Iterative UX enhancement based on real usage feedback, ",
       "Responsive interface design for desktop and mobile"
     ],
     "outcomes": [
