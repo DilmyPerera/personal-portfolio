@@ -5,9 +5,41 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    "title": "Pomodoro Timer PWA",
+    "problem": "Many study timers are either too basic, not customizable, or fail to work reliably offline across devices.",
+    "objective": "Build a cute, responsive, and offline-capable Pomodoro web app where users can focus better with customizable timer durations, mode switching, and clear session tracking.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Progressive Web App (PWA)",
+      "Service Worker",
+      "CSS",
+      "LocalStorage",
+      "ESLint"
+    ],
+    "methodology": [
+      "Component-based architecture",
+      "React Hooks for state and timer lifecycle management",
+      "Offline-first setup with service worker and cached assets",
+      "Iterative UX enhancement based on real usage feedback",
+      "Responsive interface design for desktop and mobile"
+    ],
+    "outcomes": [
+      "Implemented full Pomodoro flow with Focus, Short Break, and Long Break modes (default 25/5/20).",
+      "Added manual inline timer editing so users can click and change durations per mode.",
+      "Integrated alarm audio playback on timer completion with stop-on-OK popup behavior.",
+      "Enabled session statistics tracking (study time, break time, completed pomodoros).",
+      "Delivered theme-driven, mascot-based UI with online/offline awareness."
+    ],
+    "role": "Frontend Developer",
+    "link": "https://github.com/DilmyPerera/Pomodoro-Timer-PWA",
+    "featured": true
+  },
+  {
     "title": "E-Commerce Sales Dashboard – End-to-End Analytics Project",
     "problem": "Online retail businesses often struggle to understand revenue drivers, product performance, customer behavior, and geographic concentration from raw transactional data. The lack of clean, interactive insights makes it hard to identify quick wins and risks (e.g., market dependency, low-margin products, seasonality).",
-    "objective": "Build a complete analytics solution to transform raw e-commerce transaction data into an interactive Power BI dashboard that reveals key revenue trends, top products, customer metrics, and geographic opportunities — demonstrating full-stack data analysis and business insight delivery.",
+    "objective": "Build a complete analytics solution to transform raw e-commerce transaction data into an interactive Power BI dashboard that reveals key revenue trends, top products, customer metrics, and geographic opportunities demonstrating full-stack data analysis and business insight delivery.",
     "technologies": [
       "Python",
       "Pandas",
