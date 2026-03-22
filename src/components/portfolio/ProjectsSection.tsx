@@ -5,6 +5,26 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    "title": "汉字学 HanZiXue – Offline HSK Chinese Flashcards",
+    "problem": "Inefficient long-term Chinese vocab retention & lack of good offline mobile tools",
+    "objective": "Create an installable PWA for HSK 1–3 spaced-repetition flashcard practice with native pronunciation",
+    "technologies": ["Next.js", "TypeScript", "Tailwind", "PWA", "Web Speech API", "localStorage"],
+    "methodology": ["Offline-first", "Basic SRS", "Mobile-first UI", "Local persistence", "MVP approach"],
+    "outcomes": [
+      "Fully functional offline flashcard application installable on Android/iOS home screens",
+      "150+ starter HSK 1–3 vocabulary cards with pinyin, English, examples and audio",
+      "Simple but effective spaced repetition that schedules reviews automatically",
+      "Native Chinese pronunciation via browser speech synthesis",
+      "Lighthouse PWA score target ≥ 90–100",
+      "Clean, distraction-free UI optimized for 10–30 minute daily study sessions",
+      "Personal learning tool + open-source Next.js + PWA reference project"
+    ],
+    "role": "Full-stack personal learning project (concept → design → implementation → deployment)",
+    "link": "https://github.com/DilmyPerera/HanZiXue-a-simple-flashcard-PWA.git",
+    "featured": true
+  },
+
+  {
     "title": "Pomodoro Timer PWA",
     "problem": "Many study timers are either too basic, not customizable, or fail to work reliably offline across devices.",
     "objective": "Build a cute, responsive, and offline-capable Pomodoro web app where users can focus better with customizable timer durations, mode switching, and clear session tracking.",
