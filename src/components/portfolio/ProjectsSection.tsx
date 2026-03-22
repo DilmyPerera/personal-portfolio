@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     "title": "汉字学 HanZiXue – Offline HSK Chinese Flashcards",
-    "problem": "Inefficient long-term Chinese vocab retention & lack of good offline mobile tools",
-    "objective": "Create an installable PWA for HSK 1–3 spaced-repetition flashcard practice with native pronunciation",
+    "problem": "Many language learners struggle with retaining Chinese vocabulary long-term due to ineffective review schedules, poor mobile/offline support in existing tools, and complicated interfaces that discourage daily practice.",
+    "objective": "Build a lightweight, installable, fully offline Progressive Web App that helps beginners efficiently learn and retain HSK 1–3 vocabulary using simple spaced repetition, native pronunciation, and a clean mobile-first experience.",
     "technologies": ["Next.js", "TypeScript", "Tailwind", "PWA", "Web Speech API", "localStorage"],
     "methodology": ["Offline-first", "Basic SRS", "Mobile-first UI", "Local persistence", "MVP approach"],
     "outcomes": [
