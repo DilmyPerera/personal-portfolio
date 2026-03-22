@@ -9,7 +9,7 @@ const projects = [
     "problem": "Many language learners struggle with retaining Chinese vocabulary long-term due to ineffective review schedules, poor mobile/offline support in existing tools, and complicated interfaces that discourage daily practice.",
     "objective": "Build a lightweight, installable, fully offline Progressive Web App that helps beginners efficiently learn and retain HSK 1–3 vocabulary using simple spaced repetition, native pronunciation, and a clean mobile-first experience.",
     "technologies": ["Next.js", "TypeScript", "Tailwind", "PWA", "Web Speech API", "localStorage"],
-    "methodology": ["Offline-first", "Basic SRS", "Mobile-first UI", "Local persistence", "MVP approach"],
+    "methodology": "The HanZiXue project was developed using a Minimal Viable Product (MVP) approach, focusing on rapid iteration and core functionality. It adopts an offline-first design with localStorage for full persistence and review capability without internet. A simple spaced-repetition algorithm increases intervals on 'Next' and resets them to 1 day on “Again”. The UI follows a mobile-first responsive layout with automatic dark mode, featuring a smooth 3D card flip created with pure CSS transforms. Level filtering (HSK 1 / 2 / 3 / All) and due-card prioritization ensure focused and efficient daily practice. Development was iterative, with frequent testing on real mobile devices to validate offline behavior, touch interactions, and speech synthesis across browsers.",
     "outcomes": [
       "Fully functional offline flashcard application installable on Android/iOS home screens",
       "150+ starter HSK 1–3 vocabulary cards with pinyin, English, examples and audio",
